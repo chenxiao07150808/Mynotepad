@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="blue">#1896e0</color>
+
+    <color name="grey">#595959</color>
+
+    <color name="shu_ru">#999999</color>
+
+    <color name="bu_xian">#cccccc</color>
+
+    <color name="radiobg_press">#FFFFFF</color>
+
+    <color name="radiobg_normal">#FFFFFF</color>
+
+    <color name="btom_line">#d9d9d9</color>
+
+    <color name="red">#f4624e</color>
+
+    <color name="green">#22ae10</color>
+
+    <color name="blues">#1898df</color>
+
+    <color name="orange">#b06c07</color>
+
+    <color name="background">#E3E3E3</color>
+
+    <color name="green_light">#5F9EA0</color>
+
+    <color name="black">#050505</color>
+</resources>

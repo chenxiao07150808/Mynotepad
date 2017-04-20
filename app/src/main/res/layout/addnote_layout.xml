@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/new_top_bg" >
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/select_bg_unit_gou" />
+    </RelativeLayout>
+    
+     
+        
+          <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btom_line" />
+
+    <EditText
+        android:id="@+id/edit_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/edit_title"
+        android:layout_weight="3"
+        android:background="@null"
+        android:capitalize="sentences"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp" />
+          
+
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+        android:background="@drawable/stroke">
+
+        <Button
+            android:id="@+id/undo_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/black_detail_tool_back_enabled" />
+
+        <Button
+            android:id="@+id/addtime_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/black_detail_tool_time" />
+    </RelativeLayout>
+
+</LinearLayout>

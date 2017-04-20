@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <View
+            android:id="@+id/xian"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btom_line" />
+
+        <ImageView
+            android:id="@+id/imgbill"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/xian"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/type_big_12" />
+
+        <TextView
+             android:visibility="gone"
+            android:id="@+id/billshow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgbill"
+            android:text="网购***"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/zuobillshow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/imgbill"
+            android:text="网购***"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

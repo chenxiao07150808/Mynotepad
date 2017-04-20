@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   >
+    
+
+    <RelativeLayout 
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+         android:background="@drawable/notes_item_bg">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_title_of_item"
+            android:text="我是标题"
+            android:textSize="18sp"
+            android:textColor="#595959"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_content_of_item"
+            android:text="我是内容"
+            android:textSize="15sp"
+            android:textColor="#cccccc"
+            android:layout_below="@+id/text_title_of_item"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_time_of_item"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#cccccc"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/notebook_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+     <View android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/xian_note"
+        android:background="@color/btom_line"
+        android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/text_notebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="记事薄"
+            android:textColor="#050505"
+            android:textSize="16sp"
+            android:textStyle="normal" 
+            android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bill_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+<View android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/xian_bill"
+        android:background="@color/btom_line"
+        android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/text_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的账单"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="normal" 
+             android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+<View android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/xian_account"
+        android:background="@color/btom_line"
+        android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/text_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的账户"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="normal" 
+             android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

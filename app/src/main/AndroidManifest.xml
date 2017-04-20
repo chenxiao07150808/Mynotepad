@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.gdmec.s07150808.mynotepad">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.activity.MainActivity" android:label="@string/app_name">
+
+
+        -<intent-filter>
+
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+
+    </intent-filter>
+
+    </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.user.UserInterface"> </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.otheresactivity.AddNoteBook"> </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.otheresactivity.AddBill"> </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.otheresactivity.LookNote"> </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.otheresactivity.RollOutOrIn"> </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.otheresactivity.DialogActivity" android:theme="@style/MyDialog"> </activity>
+
+        <activity android:name="cn.edu.gdmec.s07150808.mynotepad.otheresactivity.UserRegist"/>
+
+        <!-- 记事薄使用ContentProvider对外提供数据 -->
+
+
+        <provider android:name="cn.edu.gdmec.s07150808.mynotepad.provider.NotesProvider" android:exported="true" android:authorities="com.zhidisoft.mynotepad.noteprovider"> </provider>
+
+        <!-- 账单使用ContentProvider对外提供数据 -->
+
+
+        <provider android:name="cn.edu.gdmec.s07150808.mynotepad.provider.BillsProvider" android:exported="true" android:authorities="com.zhidisoft.mynotepad.billsprovider"> </provider>
+
+        <!-- 内部单元测试 -->
+        <uses-library android:name="android.test.runner"/>
+    </application>
+    <uses-sdk android:targetSdkVersion="21" android:minSdkVersion="15"/>
+
+    <!-- 读写权限和安装卸载权限 -->
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

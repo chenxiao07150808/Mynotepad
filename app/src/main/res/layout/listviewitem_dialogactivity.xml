@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_of_dialoglistview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_at_dialoglistview"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="现金"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
